@@ -1,0 +1,534 @@
+================================================================================
+MCP Playwright Agent — Execution Log
+Timestamp : 2026-03-05 17:07:31
+Test Set  : CL-13698 : PROJECT VI - Experimental I
+================================================================================
+
+  🔧 MCP tools/call → browser_navigate({"url": "https://automationplayground.github.io/playground/login.html"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.goto('https://automationplayground.github.io/playground/login.html');
+```
+### Page
+- Page URL: https://automationplayground.github.io/playground/login.html
+- Page Title: Document
+### Snapshot
+```yaml
+- generic [ref=e2]:
+  - heading "Robot Framework Playground" [level=4] [ref=e3]
+  - generic [ref=e4]:
+    - text: "USERNAME:"
+    - textbox [ref=e5]
+  - generic [ref=e6]:
+    - text: "PASSWORD:"
+    - textbox [ref=e7]
+  - generic [ref=e8]:
+    - button "Sign In" [ref=e9] [cursor=pointer]
+    - link "Back to Page" [ref=e10] [cursor=pointer]:
+      - /url: index.html
+      - button "Back to Page" [ref=e11]
+  - paragraph
+```
+### Events
+- [VERBOSE] [DOM] Password field is not contained in...utomationplayground.github.io/playground/login.html:0
+  🔧 MCP tools/call → browser_snapshot({})
+  ✅ Result: ### Page
+- Page URL: https://automationplayground.github.io/playground/login.html
+- Page Title: Document
+- Console: 1 errors, 0 warnings
+### Snapshot
+```yaml
+- generic [ref=e2]:
+  - heading "Robot Framework Playground" [level=4] [ref=e3]
+  - generic [ref=e4]:
+    - text: "USERNAME:"
+    - textbox [ref=e5]
+  - generic [ref=e6]:
+    - text: "PASSWORD:"
+    - textbox [ref=e7]
+  - generic [ref=e8]:
+    - button "Sign In" [ref=e9] [cursor=pointer]
+    - link "Back to Page" [ref=e10] [cursor=pointer]:
+      - /url: index.html
+      - button "Back to Page" [ref=e11]
+  - paragraph
+```
+### Events
+- New console entries: ../../../tmp/playwright-mcp-output/1772705255199/console-2026-03-05T10-07-37-921Z.log#L1
+- [ERROR] Failed to load resource: the server respon... https://automationplayground.github.io/favicon.ico:0
+  🔧 MCP tools/call → browser_fill_form({"fields": [{"name": "Username field", "type": "textbox", "ref": "e5", "value": "username"}, {"name": "Password field", "type": "textbox", "ref": "e7", "value": "P@ssw0rd"}]})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.locator('#inp_username').fill('username');
+await page.locator('#inp_password').fill('P@ssw0rd');
+```
+  🔧 MCP tools/call → browser_click({"ref": "e9", "element": "Sign In button"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.getByRole('button', { name: 'Sign In' }).click();
+```
+### Page
+- Page URL: https://automationplayground.github.io/playground/home.html
+- Page Title: Document
+- Console: 1 errors, 0 warnings
+### Snapshot
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]: Robot Playground
+      - list [ref=e5]:
+        - listitem [ref=e6] [cursor=pointer]:
+          - generic [ref=e7]: log out
+  - generic [ref=e8]:
+    - generic [ref=e10]:
+      - heading "Personal Profile" [level=2] [ref=e11]
+      - separator [ref=e12]
+      - heading "Profile" [level=3] [ref=e13]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "Firstname: *"
+          - 'textbox "Firstname: *" [ref=e17]'
+        - generic [ref=e18]:
+          - generic [ref=e19]: "Lastname: *"
+          - 'textbox "Lastname: *" [ref=e20]'
+      - generic [ref=e22]:
+        - generic [ref=e23]: "Birth Date : *"
+        - combobox [ref=e24]:
+          - option "--" [selected]
+          - option "1"
+          - option "2"
+          - option "3"
+          - option "4"
+          - option "5"
+          - option "6"
+          - option "7"
+          - option "8"
+          - option "9"
+          - option "10"
+          - option "11"
+          - option "12"
+          - option "13"
+          - option "14"
+          - option "15"
+          - option "16"
+          - option "17"
+          - option "18"
+          - option "19"
+          - option "20"
+          - option "21"
+          - option "22"
+          - option "23"
+          - option "24"
+          - option "25"
+          - option "26"
+          - option "27"
+          - option "28"
+          - option "29"
+          - option "30"
+          - option "31"
+        - text: /
+        - combobox [ref=e25]:
+          - option "--" [selected]
+          - option "Jan"
+          - option "Feb"
+          - option "Mar"
+          - option "Apr"
+          - option "May"
+          - option "Jun"
+          - option "Jul"
+          - option "Aug"
+          - option "Sep"
+          - option "Oct"
+          - option "Nov"
+          - option "Dec"
+        - text: /
+        - combobox [ref=e26]:
+          - option "--" [selected]
+          - option "2019"
+          - option "2018"
+          - option "2017"
+          - option "2016"
+          - option "2015"
+          - option "2014"
+          - option "2013"
+          - option "2012"
+          - option "2011"
+          - option "2010"
+          - option "2009"
+          - option "2008"
+          - option "2007"
+          - option "2006"
+          - option "2005"
+          - option "2004"
+          - option "2003"
+          - option "2002"
+          - option "2001"
+          - option "2000"
+          - option "1999"
+          - option "1998"
+          - option "1997"
+          - option "1996"
+          - option "1995"
+          - option "1994"
+          - option "1993"
+          - option "1992"
+          - option "1991"
+          - option "1990"
+          - option "1989"
+          - option "1988"
+          - option "1987"
+          - option "1986"
+          - option "1985"
+          - option "1984"
+          - option "1983"
+          - option "1982"
+          - option "1981"
+          - option "1980"
+          - option "1979"
+          - option "1978"
+          - option "1977"
+          - option "1976"
+          - option "1975"
+          - option "1974"
+          - option "1973"
+          - option "1972"
+          - option "1971"
+          - option "1970"
+          - option "1969"
+          - option "1968"
+          - option "1967"
+          - option "1966"
+          - option "1965"
+          - option "1964"
+          - option "1963"
+          - option "1962"
+          - option "1961"
+          - option "1960"
+          - option "1959"
+          - option "1958"
+          - option "1957"
+          - option "1956"
+          - option "1955"
+          - option "1954"
+          - option "1953"
+          - option "1952"
+          - option "1951"
+          - option "1950"
+          - option "1949"
+          - option "1948"
+          - option "1947"
+          - option "1946"
+          - option "1945"
+          - option "1944"
+          - option "1943"
+          - option "1942"
+          - option "1941"
+          - option "1940"
+          - option "1939"
+          - option "1938"
+          - option "1937"
+          - option "1936"
+          - option "1935"
+          - option "1934"
+          - option "1933"
+          - option "1932"
+          - option "1931"
+          - option "1930"
+          - option "1929"
+          - option "1928"
+          - option "1927"
+          - option "1926"
+          - option "1925"
+          - option "1924"
+          - option "1923"
+          - option "1922"
+          - option "1921"
+          - option "1920"
+    - generic [ref=e28]:
+      - heading "Document" [level=3] [ref=e29]
+      - separator [ref=e30]
+      - generic [ref=e31]:
+        - ...
+  🔧 MCP tools/call → browser_type({"ref": "e17", "element": "Firstname textbox", "text": "John"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.getByRole('textbox', { name: 'Firstname: *' }).fill('John');
+```
+  🔧 MCP tools/call → browser_type({"ref": "e20", "element": "Lastname textbox", "text": "Doe"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.getByRole('textbox', { name: 'Lastname: *' }).fill('Doe');
+```
+  🔧 MCP tools/call → browser_snapshot({})
+  ✅ Result: ### Page
+- Page URL: https://automationplayground.github.io/playground/home.html
+- Page Title: Document
+- Console: 1 errors, 0 warnings
+### Snapshot
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]: Robot Playground
+      - list [ref=e5]:
+        - listitem [ref=e6] [cursor=pointer]:
+          - generic [ref=e7]: log out
+  - generic [ref=e8]:
+    - generic [ref=e10]:
+      - heading "Personal Profile" [level=2] [ref=e11]
+      - separator [ref=e12]
+      - heading "Profile" [level=3] [ref=e13]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "Firstname: *"
+          - 'textbox "Firstname: *" [ref=e17]': John
+        - generic [ref=e18]:
+          - generic [ref=e19]: "Lastname: *"
+          - 'textbox "Lastname: *" [active] [ref=e20]': Doe
+      - generic [ref=e22]:
+        - generic [ref=e23]: "Birth Date : *"
+        - combobox [ref=e24]:
+          - option "--" [selected]
+          - option "1"
+          - option "2"
+          - option "3"
+          - option "4"
+          - option "5"
+          - option "6"
+          - option "7"
+          - option "8"
+          - option "9"
+          - option "10"
+          - option "11"
+          - option "12"
+          - option "13"
+          - option "14"
+          - option "15"
+          - option "16"
+          - option "17"
+          - option "18"
+          - option "19"
+          - option "20"
+          - option "21"
+          - option "22"
+          - option "23"
+          - option "24"
+          - option "25"
+          - option "26"
+          - option "27"
+          - option "28"
+          - option "29"
+          - option "30"
+          - option "31"
+        - text: /
+        - combobox [ref=e25]:
+          - option "--" [selected]
+          - option "Jan"
+          - option "Feb"
+          - option "Mar"
+          - option "Apr"
+          - option "May"
+          - option "Jun"
+          - option "Jul"
+          - option "Aug"
+          - option "Sep"
+          - option "Oct"
+          - option "Nov"
+          - option "Dec"
+        - text: /
+        - combobox [ref=e26]:
+          - option "--" [selected]
+          - option "2019"
+          - option "2018"
+          - option "2017"
+          - option "2016"
+          - option "2015"
+          - option "2014"
+          - option "2013"
+          - option "2012"
+          - option "2011"
+          - option "2010"
+          - option "2009"
+          - option "2008"
+          - option "2007"
+          - option "2006"
+          - option "2005"
+          - option "2004"
+          - option "2003"
+          - option "2002"
+          - option "2001"
+          - option "2000"
+          - option "1999"
+          - option "1998"
+          - option "1997"
+          - option "1996"
+          - option "1995"
+          - option "1994"
+          - option "1993"
+          - option "1992"
+          - option "1991"
+          - option "1990"
+          - option "1989"
+          - option "1988"
+          - option "1987"
+          - option "1986"
+          - option "1985"
+          - option "1984"
+          - option "1983"
+          - option "1982"
+          - option "1981"
+          - option "1980"
+          - option "1979"
+          - option "1978"
+          - option "1977"
+          - option "1976"
+          - option "1975"
+          - option "1974"
+          - option "1973"
+          - option "1972"
+          - option "1971"
+          - option "1970"
+          - option "1969"
+          - option "1968"
+          - option "1967"
+          - option "1966"
+          - option "1965"
+          - option "1964"
+          - option "1963"
+          - option "1962"
+          - option "1961"
+          - option "1960"
+          - option "1959"
+          - option "1958"
+          - option "1957"
+          - option "1956"
+          - option "1955"
+          - option "1954"
+          - option "1953"
+          - option "1952"
+          - option "1951"
+          - option "1950"
+          - option "1949"
+          - option "1948"
+          - option "1947"
+          - option "1946"
+          - option "1945"
+          - option "1944"
+          - option "1943"
+          - option "1942"
+          - option "1941"
+          - option "1940"
+          - option "1939"
+          - option "1938"
+          - option "1937"
+          - option "1936"
+          - option "1935"
+          - option "1934"
+          - option "1933"
+          - option "1932"
+          - option "1931"
+          - option "1930"
+          - option "1929"
+          - option "1928"
+          - option "1927"
+          - option "1926"
+          - option "1925"
+          - option "1924"
+          - option "1923"
+          - option "1922"
+          - option "1921"
+          - option "1920"
+    - generic [ref=e28]:
+      - heading "Document" [level=3] [ref=e29]
+      - separator [ref=e30]
+      - generic [ref=e31]:
+        - generic [ref=e32]: 1. สำเนาบัตรพนักงาน
+        - button "Choose File" [ref=e33]
+    ...
+  🔧 MCP tools/call → browser_navigate({"url": "https://automationplayground.github.io/playground/login.html"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.goto('https://automationplayground.github.io/playground/login.html');
+```
+### Page
+- Page URL: https://automationplayground.github.io/playground/login.html
+- Page Title: Document
+### Snapshot
+```yaml
+- generic [ref=e2]:
+  - heading "Robot Framework Playground" [level=4] [ref=e3]
+  - generic [ref=e4]:
+    - text: "USERNAME:"
+    - textbox [ref=e5]
+  - generic [ref=e6]:
+    - text: "PASSWORD:"
+    - textbox [ref=e7]
+  - generic [ref=e8]:
+    - button "Sign In" [ref=e9] [cursor=pointer]
+    - link "Back to Page" [ref=e10] [cursor=pointer]:
+      - /url: index.html
+      - button "Back to Page" [ref=e11]
+  - paragraph
+```
+### Events
+- [VERBOSE] [DOM] Password field is not contained in...utomationplayground.github.io/playground/login.html:0
+  🔧 MCP tools/call → browser_type({"ref": "e5", "text": "username", "element": "username textbox"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.locator('#inp_username').fill('username');
+```
+  🔧 MCP tools/call → browser_type({"ref": "e7", "text": "WrongP@ss", "element": "password textbox"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.locator('#inp_password').fill('WrongP@ss');
+```
+  🔧 MCP tools/call → browser_click({"ref": "e9", "element": "Sign In button"})
+  ✅ Result: ### Ran Playwright code
+```js
+await page.getByRole('button', { name: 'Sign In' }).click();
+```
+### Page
+- Page URL: https://automationplayground.github.io/playground/login.html
+- Page Title: Document
+### Snapshot
+```yaml
+- <changed> generic [ref=e2]:
+  - ref=e3 [unchanged]
+  - ref=e4 [unchanged]
+  - generic [ref=e6]:
+    - text: "PASSWORD:"
+    - textbox [ref=e7]: WrongP@ss
+  - generic [ref=e8]:
+    - button "Sign In" [active] [ref=e9] [cursor=pointer]
+    - ref=e10 [unchanged]
+  - paragraph [ref=e12]: Invalid Login
+```
+### Events
+- [LOG] Login Result:false @ https://automationplayground.github.io/playground/asset/function.js:11
+- [LOG] Storage @ https://automationplayground.github.io/playground/asset/function.js:22
+  🔧 MCP tools/call → browser_snapshot({})
+  ✅ Result: ### Page
+- Page URL: https://automationplayground.github.io/playground/login.html
+- Page Title: Document
+### Snapshot
+```yaml
+- generic [ref=e2]:
+  - heading "Robot Framework Playground" [level=4] [ref=e3]
+  - generic [ref=e4]:
+    - text: "USERNAME:"
+    - textbox [ref=e5]: username
+  - generic [ref=e6]:
+    - text: "PASSWORD:"
+    - textbox [ref=e7]: WrongP@ss
+  - generic [ref=e8]:
+    - button "Sign In" [active] [ref=e9] [cursor=pointer]
+    - link "Back to Page" [ref=e10] [cursor=pointer]:
+      - /url: index.html
+      - button "Back to Page" [ref=e11]
+  - paragraph [ref=e12]: Invalid Login
+```
+
+================================================================================
+Completed : 2026-03-05 17:08:39
+================================================================================

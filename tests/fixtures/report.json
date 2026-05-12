@@ -1,0 +1,170 @@
+{
+  "test_set": "CL-13698 : PROJECT VI - Experimental I",
+  "run_start": "2026-03-05T15:36:53.431631",
+  "run_end": "2026-03-05T15:37:34.485762",
+  "duration_s": 41,
+  "result": "passed",
+  "scenarios_total": 2,
+  "scenarios_passed": 2,
+  "scenarios_failed": 0,
+  "actions": 7,
+  "errors": 0,
+  "scenarios": [
+    {
+      "id": "SCN_LOGIN_POS_00001",
+      "name": "SCN_LOGIN_POS_00001",
+      "passed": true,
+      "actions": 5,
+      "errors": 0
+    },
+    {
+      "id": "SCN_LOGIN_NEG_00001",
+      "name": "SCN_LOGIN_NEG_00001",
+      "passed": true,
+      "actions": 2,
+      "errors": 0
+    }
+  ],
+  "timeline": [
+    {
+      "ts": "15:34",
+      "kind": "observation",
+      "label": "Connecting to Azure AI Foundry…",
+      "scenario_id": null,
+      "note": ""
+    },
+    {
+      "ts": "15:34",
+      "kind": "result",
+      "label": "✅ Connected — claude-sonnet-4-5 · 22 MCP tools",
+      "scenario_id": null,
+      "note": ""
+    },
+    {
+      "ts": "15:36",
+      "kind": "observation",
+      "label": "⚠ ALM_BASE_URL not set or unreachable — using built-in mock data. Add ALM_BASE_U…",
+      "scenario_id": null,
+      "note": ""
+    },
+    {
+      "ts": "15:36",
+      "kind": "observation",
+      "label": "🔍 LLM readiness analysis started — CL-13698 : PROJECT VI - Experimental I",
+      "scenario_id": null,
+      "note": ""
+    },
+    {
+      "ts": "15:36",
+      "kind": "observation",
+      "label": "Execution started",
+      "scenario_id": null,
+      "note": ""
+    },
+    {
+      "ts": "15:36",
+      "kind": "result",
+      "label": "✅ LLM readiness: Medium — 3 high-risk  ·  8 medium-risk",
+      "scenario_id": null,
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "action",
+      "label": "Navigate → https://automationplayground.github.io/playground/…",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "debug",
+      "label": "Result: ### Ran Playwright code",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": "```js\nawait page.goto('https://automationplayground.github.io/playground/login.html');\n```\n### Page\n- Page URL: https://automationplayground.github.io/playground/login.html\n- Page Title: Document\n### Snapshot\n```yaml\n- generic [ref=e2]:\n- heading \"Robot Framework Playground\" [level=4] [ref=e3]\n- generic [ref=e4]:\n- text: \"USERNAME:\"\n- textbox [ref=e5]\n- generic [ref=e6]:\n- text: \"PASSWORD:\"\n- textbox [ref=e7]\n- generic [ref=e8]:\n- button \"Sign In\" [ref=e9] [cursor=pointer]\n- link \"Back to Page\" [ref=e10] [cursor=pointer]:\n- /url: index.html\n- button \"Back to Page\" [ref=e11]\n- paragraph\n```\n### Events\n- [VERBOSE] [DOM] Password field is not contained in...utomationplayground.github.io/playground/login.html:0"
+    },
+    {
+      "ts": "15:37",
+      "kind": "action",
+      "label": "Capture page snapshot",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "debug",
+      "label": "Result: ### Page",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": "- Page URL: https://automationplayground.github.io/playground/login.html\n- Page Title: Document\n- Console: 1 errors, 0 warnings\n### Snapshot\n```yaml\n- generic [ref=e2]:\n- heading \"Robot Framework Playground\" [level=4] [ref=e3]\n- generic [ref=e4]:\n- text: \"USERNAME:\"\n- textbox [ref=e5]\n- generic [ref=e6]:\n- text: \"PASSWORD:\"\n- textbox [ref=e7]\n- generic [ref=e8]:\n- button \"Sign In\" [ref=e9] [cursor=pointer]\n- link \"Back to Page\" [ref=e10] [cursor=pointer]:\n- /url: index.html\n- button \"Back to Page\" [ref=e11]\n- paragraph\n```\n### Events\n- New console entries: ../../../tmp/playwright-mcp-output/1772699816861/console-2026-03-05T08-36-59-438Z.log#L1\n- [ERROR] Failed to load resource: the server respon... https://automationplayground.github.io/favicon.ico:0"
+    },
+    {
+      "ts": "15:37",
+      "kind": "action",
+      "label": "Type \"username\" into USERNAME textbox",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "debug",
+      "label": "Result: ### Ran Playwright code",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": "```js\nawait page.locator('#inp_username').fill('username');\n```"
+    },
+    {
+      "ts": "15:37",
+      "kind": "action",
+      "label": "Type ••• into PASSWORD textbox",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "debug",
+      "label": "Result: ### Ran Playwright code",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": "```js\nawait page.locator('#inp_password').fill('P@ssw0rd');\n```"
+    },
+    {
+      "ts": "15:37",
+      "kind": "action",
+      "label": "Click \"Sign In button\"",
+      "scenario_id": "SCN_LOGIN_POS_00001",
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "debug",
+      "label": "Result: ### Ran Playwright code",
+      "scenario_id": "SCN_LOGIN_NEG_00001",
+      "note": "```js\nawait page.getByRole('button', { name: 'Sign In' }).click();\n```\n### Page\n- Page URL: https://automationplayground.github.io/playground/home.html\n- Page Title: Document\n- Console: 1 errors, 0 warnings\n### Snapshot\n```yaml\n- generic [active] [ref=e1]:\n- banner [ref=e2]:\n- navigation [ref=e3]:\n- generic [ref=e4]: Robot Playground\n- list [ref=e5]:\n- listitem [ref=e6] [cursor=pointer]:\n- generic [ref=e7]: log out\n- generic [ref=e8]:\n- generic [ref=e10]:\n- heading \"Personal Profile\" [level=2] [ref=e11]\n- separator [ref=e12]\n- heading \"Profile\" [level=3] [ref=e13]\n- generic [ref=e14]:\n- generic [ref=e15]:\n- generic [ref=e16]: \"Firstname: *\"\n- 'textbox \"Firstname: *\" [ref=e17]'\n- generic [ref=e18]:\n- generic [ref=e19]: \"Lastname: *\"\n- 'textbox \"Lastname: *\" [ref=e20]'\n- generic [ref=e22]:\n- generic [ref=e23]: \"Birth Date : *\"\n- combobox [ref=e24]:\n- option \"--\" [selected]\n- option \"1\"\n- option \"2\"\n- option \"3\"\n- option \"4\"\n- option \"5\"\n- option \"6\"\n- option \"7\"\n- option \"8\"\n- option \"9\"\n- option \"10\"\n- option \"11\"\n- option \"12\"\n- option \"13\"\n- option \"14\"\n- option \"15\"\n- option \"16\"\n- option \"17\"\n- option \"18\"\n- option \"19\"\n- option \"20\"\n- option \"21\"\n- option \"22\"\n- option \"23\"\n- option \"24\"\n- option \"25\"\n- option \"26\"\n- option \"27\"\n- option \"28\"\n- option \"29\"\n- option \"30\"\n- option \"31\"\n- text: /\n- combobox [ref=e25]:\n- option \"--\" [selected]\n- option \"Jan\"\n- option \"Feb\"\n- option \"Mar\"\n- option \"Apr\"\n- option \"May\"\n- option \"Jun\"\n- option \"Jul\"\n- option \"Aug\"\n- option \"Sep\"\n- option \"Oct\"\n- option \"Nov\"\n- option \"Dec\"\n- text: /\n- combobox [ref=e26]:\n- option \"--\" [selected]\n- option \"2019\"\n- option \"2018\"\n- option \"2017\"\n- option \"2016\"\n- option \"2015\"\n- option \"2014\"\n- option \"2013\"\n- option \"2012\"\n- option \"2011\"\n- option \"2010\"\n- option \"2009\"\n- option \"2008\"\n- option \"2007\"\n- option \"2006\"\n- option \"2005\"\n- option \"2004\"\n- option \"2003\"\n- option \"2002\"\n- option \"2001\"\n- option \"2000\"\n- option \"1999\"\n- option \"1998\"\n- option \"1997\"\n- option \"1996\"\n- option \"1995\"\n- option \"1994\"\n- option \"1993\"\n- option \"1992\"\n- option \"1991\"\n- option \"1990\"\n- option \"1989\"\n- option \"1988\"\n- option \"1987\"\n- option \"1986\"\n- option \"1985\"\n- option \"1984\"\n- option \"1983\"\n- option \"1982\"\n- option \"1981\"\n- option \"1980\"\n- option \"1979\"\n- option \"1978\"\n- option \"1977\"\n- option \"1976\"\n- option \"1975\"\n- option \"1974\"\n- option \"1973\"\n- option \"1972\"\n- option \"1971\"\n- option \"1970\"\n- option \"1969\"\n- option \"1968\"\n- option \"1967\"\n- option \"1966\"\n- option \"1965\"\n- option \"1964\"\n- option \"1963\"\n- option \"1962\"\n- option \"1961\"\n- option \"1960\"\n- option \"1959\"\n- option \"1958\"\n- option \"1957\"\n- option \"1956\"\n- option \"1955\"\n- option \"1954\"\n- option \"1953\"\n- option \"1952\"\n- option \"1951\"\n- option \"1950\"\n- option \"1949\"\n- option \"1948\"\n- option \"1947\"\n- option \"1946\"\n- option \"1945\"\n- option \"1944\"\n- option \"1943\"\n- option \"1942\"\n- option \"1941\"\n- option \"1940\"\n- option \"1939\"\n- option \"1938\"\n- option \"1937\"\n- option \"1936\"\n- option \"1935\"\n- option \"1934\"\n- option \"1933\"\n- option \"1932\"\n- option \"1931\"\n- option \"1930\"\n- option \"1929\"\n- option \"1928\"\n- option \"1927\"\n- option \"1926\"\n- option \"1925\"\n- option \"1924\"\n- option \"1923\"\n- option \"1922\"\n- option \"1921\"\n- option \"1920\"\n- generic [ref=e28]:\n- heading \"Document\" [level=3] [ref=e29]\n- separator [ref=e30]\n- generic [ref=e31]:\n- ..."
+    },
+    {
+      "ts": "15:37",
+      "kind": "action",
+      "label": "Navigate → https://automationplayground.github.io/playground/…",
+      "scenario_id": "SCN_LOGIN_NEG_00001",
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "debug",
+      "label": "Result: ### Ran Playwright code",
+      "scenario_id": "SCN_LOGIN_NEG_00001",
+      "note": "```js\nawait page.goto('https://automationplayground.github.io/playground/login.html');\n```\n### Page\n- Page URL: https://automationplayground.github.io/playground/login.html\n- Page Title: Document\n### Snapshot\n```yaml\n- generic [ref=e2]:\n- heading \"Robot Framework Playground\" [level=4] [ref=e3]\n- generic [ref=e4]:\n- text: \"USERNAME:\"\n- textbox [ref=e5]\n- generic [ref=e6]:\n- text: \"PASSWORD:\"\n- textbox [ref=e7]\n- generic [ref=e8]:\n- button \"Sign In\" [ref=e9] [cursor=pointer]\n- link \"Back to Page\" [ref=e10] [cursor=pointer]:\n- /url: index.html\n- button \"Back to Page\" [ref=e11]\n- paragraph\n```\n### Events\n- [VERBOSE] [DOM] Password field is not contained in...utomationplayground.github.io/playground/login.html:0"
+    },
+    {
+      "ts": "15:37",
+      "kind": "action",
+      "label": "Capture page snapshot",
+      "scenario_id": "SCN_LOGIN_NEG_00001",
+      "note": ""
+    },
+    {
+      "ts": "15:37",
+      "kind": "debug",
+      "label": "Result: ### Page",
+      "scenario_id": null,
+      "note": "- Page URL: https://automationplayground.github.io/playground/login.html\n- Page Title: Document\n### Snapshot\n```yaml\n- generic [ref=e2]:\n- heading \"Robot Framework Playground\" [level=4] [ref=e3]\n- generic [ref=e4]:\n- text: \"USERNAME:\"\n- textbox [ref=e5]\n- generic [ref=e6]:\n- text: \"PASSWORD:\"\n- textbox [ref=e7]\n- generic [ref=e8]:\n- button \"Sign In\" [ref=e9] [cursor=pointer]\n- link \"Back to Page\" [ref=e10] [cursor=pointer]:\n- /url: index.html\n- button \"Back to Page\" [ref=e11]\n- paragraph\n```"
+    }
+  ]
+}
